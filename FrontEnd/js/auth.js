@@ -1,4 +1,4 @@
-const API_URL = 'https://foodiehub-6e1i.onrender.com/api';
+const API_URL = 'http://localhost:5000/api';
 
 const Auth = {
   getToken() {
