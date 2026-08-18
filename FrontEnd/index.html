@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieHub - Your Favorite Restaurants</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <header class="header"></header>
+
+  <main>
+    <div class="offer-banner">
+      <div class="marquee">
+        <span>🔥 Flat 20% off on first order! Use code: FIRST20 &nbsp;|&nbsp; Free delivery on orders above ₹500 &nbsp;|&nbsp; 🎉 Weekend Special: Buy 1 Get 1 Free on selected items &nbsp;|&nbsp; 🔥 Flat 20% off on first order! Use code: FIRST20 &nbsp;|&nbsp; Free delivery on orders above ₹500 &nbsp;|&nbsp; 🎉 Weekend Special: Buy 1 Get 1 Free on selected items</span>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Crave It. <span class="highlight">Get It.</span><br>Love It.</h1>
+        <p>Discover the best food from over 1,000+ restaurants delivered fast to your door.</p>
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search restaurants or cuisines...">
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-food-emoji">🍕🍔🌮</div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-icon">🏪</span>
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Restaurants</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">📦</span>
+          <span class="stat-number">10K+</span>
+          <span class="stat-label">Orders Delivered</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">⭐</span>
+          <span class="stat-number">4.8</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">⚡</span>
+          <span class="stat-number">30 min</span>
+          <span class="stat-label">Avg. Delivery</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories-section container">
+      <h2 class="section-title">Browse by Cuisine</h2>
+      <div class="categories" id="categories"></div>
+    </section>
+
+    <section class="restaurants-section container">
+      <h2 class="section-title">Featured Restaurants</h2>
+      <div class="restaurants-grid" id="restaurantsGrid"></div>
+      <div class="empty-state" id="noResults" style="display: none;">
+        <div class="empty-state-icon">🔍</div>
+        <h3>No restaurants found</h3>
+        <p>Try a different search or category</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
